@@ -1,7 +1,6 @@
 .jekyll-metadata
 Gemfile
 Gemfile.lock
-_config.yml
 _site/
 *.pdf
 .history/doc/overview_20201212222334.md
