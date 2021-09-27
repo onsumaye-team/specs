@@ -28,8 +28,9 @@ layout: default
                         </div>
                     </div>
 
-                    <h5>{{ site.data.navigation_docs .title }}</h5>
+                    <h5>{{ site.data.navigation_docs.title }}</h5>
                     <ul class="uk-nav uk-nav-default doc-nav">
+                        {{ page.url }}
                         {% assign repo_path = page.url | prepend:site.baseurl %}
                         {% for doc in site.data.navigation_docs.section %}
                         {% assign doc_url = doc.path | append:"/" %}
@@ -37,7 +38,7 @@ layout: default
                         {% endfor %}
                     </ul>
 
-                    <h5>{{ site.data.building-blocks .title }}</h5>
+                    <h5>{{ site.data.building-blocks.title }}</h5>
                     <ul class="uk-nav uk-nav-default doc-nav">
                         {% assign repo_path = page.url | prepend:site.baseurl %}
                         {% for doc in site.data.building-blocks.section %}
