@@ -1,0 +1,34 @@
+.uk-navbar-container{
+    .uk-navbar-center, .uk-navbar-right{
+        display: none;
+    }
+    .uk-navbar-left{
+        width:100%;
+        .uk-logo{
+            color: $blue;
+            font-weight: inherit;
+            font: 36px/47px 'Intel One Display Regular';
+            letter-spacing: 1px;
+            height: 103px;
+        }
+        .uk-navbar-nav{
+            margin-left: auto;
+            li{
+                a{
+                    color: $menuColor;
+                    height: 103px;
+                    font: 18px/22px 'Intel One Display Regular';
+                    letter-spacing: 0.7px;
+                    &:hover{
+                        color: $blue;
+                    }
+                }
+                &.uk-active{
+                    a{
+                        color: $blue;
+                    }
+                }
+            }
+        }
+    }
+}

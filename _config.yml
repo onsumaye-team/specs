@@ -19,6 +19,7 @@ permalink:          /:title/
 url:                ""
 
 main_url:           "https://onsumaye-team.github.io/intel-smart-edge-open"
+#main_url:           "http://127.0.0.1:4001"
 
 # Site logo # e.g. logo.png, upload logo image file to /uploads/ folder
 logo:               
@@ -28,7 +29,6 @@ navbar:
     search:         true
   
 # Default author settings
-
 
 # Author settings, displayed on post and doc pages if front matter references author name e.g. author: peter
 authors:

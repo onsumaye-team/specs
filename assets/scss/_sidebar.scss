@@ -1,0 +1,91 @@
+.sidebar-docs{
+    padding-right: 30px;
+    overflow: hidden;
+    border-right: 1px solid #eee;
+    position: static !important;
+    width: 100%;
+    .leftSection{
+        margin: 0;
+        #contact-button{
+            display: none;
+        }
+        .searchBar-section{
+            position: relative;
+            input[type="text"]{
+                width: 100%;
+                border:2px solid $blue;
+                line-height: 24px;
+                padding: 12px;
+                outline: 0;
+                margin-bottom: 35px;
+            }
+            .ais-search-box--powered-by{
+                display: none;
+            }
+            .ais-search-box--magnifier-wrapper{
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                top:0;
+                right: 0px;
+                background-color: $blue;
+                cursor: pointer;
+                .ais-search-box--magnifier{
+                    text-align: center;
+                    svg{
+                        width: 22px;
+                        height: 22px;
+                        margin-top: 12px;
+                        path{
+                            fill: #fff;
+                        }
+                    }
+                }
+            }
+            .ais-search-box--reset-wrapper{
+                display: block;
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                top: 0;
+                right: 0px;
+                background-color:$blue;
+                cursor: pointer;
+                .ais-search-box--reset{
+                    background: transparent;
+                    color: #fff;
+                    border: 0;
+                    svg{
+                        fill: #fff;
+                        width: 20px;
+                        margin: 15px 0 0 10px;
+                    }
+                }
+            }
+            .output-section{
+                .ais-hits{
+                    .ais-hits--item{
+                        margin-bottom: 25px;
+                        .search-item{
+                            .columns-left-column{
+                                margin-bottom: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .doc-nav{
+        li{
+            a{
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media (min-width:1200px){
+    .sidebar-fixed-width{
+        width:380px;
+    }
+}

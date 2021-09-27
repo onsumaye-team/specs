@@ -5,19 +5,20 @@ left:
     url: /
 
   - title: Docs
-    url: /docs/installation/
+    url: /docs/openness_releasenotes/
 
-  - title: Blog
-    url: /blog/
+  - title: Release Notes
+    url: /release-notes/
 
-  - title: Changelogs
-    dropdown:
+  - title: Contact
+    url: /contact/
+   # dropdown:
 
-      - title: Timeline Style
-        url: /changelog-timeline/
+     # - title: Timeline Style
+      #  url: /changelog-timeline/
 
-      - title: Post Style
-        url: /changelog-posts/
+      #- title: Post Style
+       # url: /changelog-posts/
 
 
 # Navbar right menu navigation links
