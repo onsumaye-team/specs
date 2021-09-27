@@ -16,7 +16,8 @@ baseurl:            "/specs"
 permalink:          /:title/
 
 # Site base hostname & protocol, e.g. http://example.com
-url:                "https://onsumaye-team.github.io"
+url:                ""
+#url:                "https://onsumaye-team.github.io"
 
 main_url:           "https://onsumaye-team.github.io/intel-smart-edge-open"
 #main_url:           "http://127.0.0.1:4000/intel-smart-edge-open"
