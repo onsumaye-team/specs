@@ -31,9 +31,9 @@ layout: default
                     <h5>{{ site.data.navigation_docs .title }}</h5>
                     <ul class="uk-nav uk-nav-default doc-nav">
                         {% assign repo_path = page.url | prepend:site.baseurl %}
+                        {{ repo_path }}
                         {% for doc in site.data.navigation_docs.section %}
                         {% assign doc_url = doc.path | append:"/" %}
-                        {{ doc_url }}
                         <li class="{% if doc_url == repo_path %}uk-active{% endif %}"><a href="{{ doc.path}}">{{ doc.title }}</a></li>
                         {% endfor %}
                     </ul>
