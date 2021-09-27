@@ -33,8 +33,8 @@ layout: default
                         {% assign repo_path = page.url | prepend:site.baseurl %}
                         {% for doc in site.data.navigation_docs.section %}
                         {% assign doc_url = doc.path | append:"/" %}
-                        <li class="{% if doc_url == repo_path %}uk-active{% endif %}"><a href="{{ doc.path}}">{{
-                                doc.title }}</a></li>
+                        {{ doc_url }}
+                        <li class="{% if doc_url == repo_path %}uk-active{% endif %}"><a href="{{ doc.path}}">{{ doc.title }}</a></li>
                         {% endfor %}
                     </ul>
 
@@ -43,8 +43,7 @@ layout: default
                         {% assign repo_path = page.url | prepend:site.baseurl %}
                         {% for doc in site.data.building-blocks.section %}
                         {% assign doc_url = doc.path | append:"/" %}
-                        <li class="{% if doc_url == repo_path %}uk-active{% endif %}"><a href="{{ doc.path}}">{{
-                                doc.title }}</a></li>
+                        <li class="{% if doc_url == repo_path %}uk-active{% endif %}"><a href="{{ doc.path}}">{{ doc.title }}</a></li>
                         {% endfor %}
                     </ul>
                 </div>
