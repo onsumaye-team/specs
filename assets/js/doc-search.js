@@ -22,7 +22,7 @@ $(document).ready(function () {
     //alert (JSON.stringify(search));
     openness_search.addWidget(instantsearch.widgets.searchBox({
         container: input,
-        placeholder: 'Search in the documentation',
+        placeholder: 'Search document',
         autofocus: false,
         poweredBy: true
     }));
@@ -32,8 +32,8 @@ $(document).ready(function () {
         templates: {
             empty: 'No results',
             item(hit) { 
-               // console.log(hit)
-            return   '<div class="search-item"><div class="columns-left-column"><a href="/'+landing+hit.path+'">'+hit.title+'</a></div><div class="columns-right-column">'+hit._snippetResult.contents.value+'</div></div>'
+            // console.log(hit)
+            return  '<div class="search-item"><div class="columns-left-column"><a href="/'+landing+hit.path+'">'+hit.title+'</a></div><div class="columns-right-column">'+hit._snippetResult.contents.value+'</div></div>'
 
             }
         },
